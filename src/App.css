@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+*{
+	box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root{
+	text-size-adjust: 100%;
+	letter-spacing: normal;
+	background-color:#ebf2de ;
+	margin: 0 auto;
+	width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.main_div{
+  height: 100vh;
+  background-color:#ffffff ;
+}
+.todo_main{
+  border-radius: 20px;
+  height: 97vh;
+}
+.todo_head{
+  background: linear-gradient(to bottom right, #09c2f8 49%, #0460e9 100%);
+  text-shadow: 2px 2px #070684;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px ;
 }
 
-.App-link {
-  color: #61dafb;
+.todo_heading{
+ color: #ffffff;
+ font-size: 3.5rem;
+ font-weight: bolder;
+ letter-spacing: 0.5rem;
+ font-family: 'Signika Negative', sans-serif;
+}
+.todo_list_heading{
+ color:  #272a33;
+ font-size: 1.8rem;
+ font-weight: bolder;
+ letter-spacing: 0.2rem;
+ font-family: 'Signika Negative', sans-serif;
+}
+.Item_list_body{
+  max-height: 65vh;
+  max-width: 100%;
+  overflow-x:hidden !important;
+  overflow:auto;
+  /* webkit-overflow-scrolling: touch; */
+}
+.btn-empty {
+  color: #d2d2d2;
+  font-weight: bolder;
+  font-weight: bolder;
+  font-size: 1rem ;
+  letter-spacing: 0.1rem ;
+  font-family: 'Signika Negative', sans-serif ;
+}
+.btn-nonEmpty {
+  color: rgb(197, 4, 4);
+  font-weight: bolder;
+  font-size: 1rem ;
+  letter-spacing: 0.1rem ;
+  font-family: 'Signika Negative', sans-serif ;
+}
+.list_item{
+  background-color: #ebf2de ;
+  border-radius: 5px;
+}
+.List_item_text{
+  color:  #272a33 ;
+  font-size: 1rem ;
+  font-weight: bolder ;
+  letter-spacing: 0.1rem ;
+  font-family: 'Signika Negative', sans-serif ;
+  margin: 0;
+}
+.Edit_btn{
+  background: none;
+  border: none;
+  color: rgb(43, 148, 43);
+  padding: 0;
+  margin: 0;
+}
+.dlt_btn{
+  background: none;
+  border: none;
+  color: rgb(197, 4, 4);
+  padding: 0;
+  margin: 0;
+}
+.add_btn{
+  background-color: #ffffff !important;
+  color:  #272a33 !important;
+ font-size: 1rem !important;
+ font-weight: bolder !important;
+ letter-spacing: 0.1rem !important;
+ font-family: 'Signika Negative', sans-serif !important;
+}
+.add_btn:hover{
+  background-color: transparent !important;
+  color:  #ffffff !important;
+  border: 3px solid #ffffff!important;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b4b7b8 !important;
+  opacity: 1; /* Firefox */
+  font-size: 1rem !important;
+ font-family: 'Signika Negative', sans-serif !important;
+}
+.edit_input{
+  color:  #272a33 !important;
+  font-size: 1rem !important;
+  font-weight: bolder !important;
+  letter-spacing: 0.1rem !important;
+  font-family: 'Signika Negative', sans-serif !important;
+  border: none !important;
+  background: #ebf2de!important ;
+}
+.edit_input:focus{
+  border: #95a0ab !important;
+  background: #ebf2de!important ;
+  box-shadow: none !important;
+}
+input {
+  background-color: transparent;
+  border: 0px solid;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
